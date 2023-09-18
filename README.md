@@ -12,7 +12,7 @@ Interface de usuário interativa com design atraente usando HTML e CSS.
 Lógica de jogo implementada em JavaScript para determinar o resultado com base nas respostas do usuário.
 Integração de API para envio de avaliação por e-mail, permitindo que os usuários forneçam feedback diretamente do jogo.
 Execução
-Acesse e jogue através do link: rafyke.github.io/qseu_1.1
+Acesse e jogue através do link: rafyke.github.io/qseu_1.2
 
 ######## CORREÇÃO DE BUGS & ALTERAÇÕES ######## 
 Versão em inglês não retornava para a página em português;
