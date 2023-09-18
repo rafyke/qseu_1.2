@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="public/css/style.css">
+
+  <title>Quem sou eu - Jogo</title>
+</head>
+
+<body>
+  <div class="regras" id="popup">
+    <button type="button" class="close" onclick="fechar()" id="botaoFechar">X</button>
+    <div class="en">
+      <a href="index.htm"><img src="public/css/eua.png" alt="inglês"></a>
+  </div>
+    
+    <h1>
+      <center>Regras</center>
+    </h1>
+    <br>
+    <p>
+      Adivinhe a pessoa através das dicas exibidas.<br>
+      Você tem 5 ❤ , que expressam cinco tentativas.<br>
+    </p>
+    <div class="avalie">
+      <div class="popupAvalia" id="popup">
+        <div class="popup-content">
+            <br>
+            <h2>Avaliação</h2><br>
+            <p>Como você avaliaria este jogo?</p><br>
+            <form method="post" id="survey-form">
+                <div class="form-group">
+                    <ul class="inline">
+                        <li><button class="rating-button" data-rating="1"><center>&#9733</center></button></li>
+                        <li><button class="rating-button" data-rating="2"><center>&#9733</center></button></li>
+                        <li><button class="rating-button" data-rating="3"><center>&#9733</center></button></li>
+                        <li><button class="rating-button" data-rating="4"><center>&#9733</center></button></li>
+                        <li><button class="rating-button" data-rating="5"><center>&#9733</center></button></li>
+                    </ul>
+                </div>
+                <div class="form-group">
+                    <p class="inlinep"><span>muito ruim</span> | <span>ruim</span> | <span>regular</span> | <span>bom</span> |<span>muito bom</span></p>
+                </div>
+                <div class="form-group">
+                    <label id="name-label" for="name"> </label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Seu nome aqui" required="">
+                    <textarea id="comment" class="inputCom" name="comment" placeholder="Deixa aqui sua crítica, sugestão ou ideia."></textarea>
+                </div>
+                <button type="submit" id="botaoEnviar">Enviar</button>
+            </form>
+        </div>
+        
+    </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="container">
+
+    <div class="header">
+      
+      <div class="header-content">
+        <button type="button" class="close" onclick="abrir()" id="botaoAbrir">&#9733</button>
+              <div class="vidas"><br>
+              <p id="vidasP" align="center"></p>
+          </div>
+          
+      </div>
+  </div>
+   
+    <div class="dicas">
+      <ul><li><p>Dica Inicial: </p>
+      <span id="zeroTip"></span></li></ul>
+      <ul>
+        <li>I. <span id="firTip"></span></li>
+        <li>II. <span id="secTip"></span></li>
+        <li>III. <span id="thTip"></span></li>
+        <li>IV. <span id="foTip"></span></li>
+        <li>V. <span id="fiTip"></span></li>
+      </ul>
+    </div>
+    
+    <div class="resposta">
+      <form action=""> <br>
+        <label for="inputPal"> Quem sou eu ? </label>
+        <input type="text" id="inputPal" placeholder="Insira sua resposta" />
+        <button type="button" id="botaoExibir">Outra dica</button>
+        <button type="button" onclick="adivinhar()" id="botaoAdivinhar">Adivinhar</button>
+        <button type="button" id="botaoPular">Pular</button>
+      </div>
+      </form>
+    
+    <div class="footer">
+      <footer>
+        <center>
+          <span>Desenvolvido por Rafyke, 2023.</span>
+          <hr><br>
+          <a href="https://www.github.com/rafyke" target="_blank"><img src="public/css/git.png" alt="github"></a>
+          <a href="https://www.linkedin.com/in/rafaelapc33/" target="_blank"><img src="public/css/lin.png"
+              alt="linkedin"></a>
+        </center>
+      </footer>
+    </div>
+  </div>
+</div>
+  
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="public/js/scriptAva.js"></script>
+  <script src="public/js/script.js"></script>
+</body>
+
+</html>

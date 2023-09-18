@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="public/css/style.css">
+  <title>Who Am I ? - Game</title>
+</head>
+
+<body>
+  
+  <div class="regras" id="popup">
+    <button type="button" class="close" onclick="fechar()" id="botaoFechar">X</button>
+    <div class="br">
+      <a href="indexpt.htm">
+        <img src="public/css/br.png" alt="português">
+      </a>
+  </div>
+    
+      <p>
+      <h1>
+        <center>Rules
+      </h1>
+      <br>
+      Guess the person based on the displayed clues.
+      You have 5 ❤ , representing five attempts.</center>
+      </p>
+      <div class="avalie">
+        <div class="popupAvalia" id="popup">
+          <div class="popup-content">
+              <br>
+              <h2>Review</h2><br>
+              <p>How would you review this game?</p><br>
+              <form method="post" id="survey-form">
+                  <div class="form-group">
+                      <ul class="inline">
+                          <li><button class="rating-button" data-rating="1"><center>&#9733</center></button></li>
+                          <li><button class="rating-button" data-rating="2"><center>&#9733</center></button></li>
+                          <li><button class="rating-button" data-rating="3"><center>&#9733</center></button></li>
+                          <li><button class="rating-button" data-rating="4"><center>&#9733</center></button></li>
+                          <li><button class="rating-button" data-rating="5"><center>&#9733</center></button></li>
+                      </ul>
+                  </div>
+                  <div class="form-group">
+                      <p class="inlinep"><span> terrible</span> | <span> bad</span> | <span> average</span> | <span> good</span> |<span> awesome</span></p>
+                  </div>
+                  <div class="form-group">
+                      <label id="name-label" for="name"> </label>
+                      <input type="text" name="name" id="name" class="form-control" placeholder="Your name here" required="">
+                      <textarea id="comment" class="inputCom" name="comment" placeholder="Leave your comment"></textarea>
+                  </div>
+                  <button type="submit" id="botaoEnviar">Send</button>
+              </form>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+  <div class="container">
+    <div class="header">
+      
+      <div class="header-content">
+        <button type="button" class="close" onclick="openP()" id="openBtn">&#9733</button>
+  <div class="lives"><br>
+              <p id="livesP" align="center"> </p>
+            </div>
+
+      </div>
+      </div>
+
+            <div class="hints"> 
+              <ul><li><p>Initial clue: </p>
+              <span id="zeroTip"></span></li></ul>
+              <ul>
+                <li>I. <span id="firTip"></span></li>
+                <li>II. <span id="secTip"></span></li>
+                <li>III. <span id="thTip"></span></li>
+                <li>IV. <span id="foTip"></span></li>
+                <li>V. <span id="fiTip"></span></li>
+              </ul>
+            </div>
+
+            <div class="answer">
+              <form action=""> <br>
+                <label for="inputWord"> Who am I? </label>
+                <input type="text" id="inputWord" placeholder="Enter your guess" />
+                <div class="buttons">
+                  <button type="button" id="showButton">Show Clue</button>
+                  <button type="button" id="guessButton">Guess</button>
+                  <button type="button" id="skipButton">Skip</button>
+                </div>
+              </form>
+            </div>
+            
+            <div class="footer">
+              <footer>
+                <center>
+                  <span>Made by Rafyke, 2023.</span>
+                  <hr>
+                  <a href="https://www.github.com/rafyke" target="_blank"><img src="public/css/git.png" alt="github"></a>
+                  <a href="https://www.linkedin.com/in/rafaelapc33/" target="_blank"><img src="public/css/lin.png"
+                      alt="linkedin"></a>
+                      
+                </center>
+              </footer>
+            </div>
+          </div>
+      </div>
+      <script src="public/EN/enScript.js"></script>
+      <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="public/js/scriptAva.js"></script>
+</body>
+
+</html>

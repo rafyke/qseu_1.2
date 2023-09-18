@@ -1,0 +1,178 @@
+/*ESTILO*/
+:root {
+    --primary-color: #eb92be;
+    --primary-color-darker: #d82880ff;
+    --second-color:#63c9b4;
+  }
+html{
+    box-sizing: border-box;
+    height: 100%;
+}
+*,
+::before,
+::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body{
+    align-items: center;
+    background: linear-gradient(320deg, #eb92be, #ffef78, #63c9b4);
+    display: flex;
+    font-family: 'Dosis', sans-serif;
+    font-display: swap;
+    height:inherit;
+    justify-content: center;
+    
+}
+
+/*RODAPÉ DESIGN*/
+.footer{
+  padding-top: 3px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:12px;
+}
+hr {
+  border: 3px;
+  padding: 1px;
+  border-color: #fff;
+}
+ul, ol {
+  list-style-type: none;
+}
+
+.container, .regras{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255,255, 255, 0.75);
+    border: 1px solid rgba(255,255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color:#232323;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255,255,255,0.30);
+    flex-basis:400px;
+    height:540px;
+    padding: 20px 35px;
+
+}
+/*ESTILO AVALIA*/
+
+.rating-button {
+  background-color: #fff;
+  color:var(--second-color);
+  cursor: pointer;
+  height:30px;
+  width: 30px;
+  padding-bottom: 15px;
+  border:none;
+  border-radius:50px;
+  font-size: 25px;
+  text-align: center;
+  cursor: pointer;
+  
+}
+.inline li{
+  display:inline-block;
+}
+.inlinep{
+  font-size:10px;
+  color:#fff;
+  padding-bottom: 20px;
+}
+.rating-button:hover {
+  color: var(--second-color);
+}
+.rating-button.selected {
+  background-color: var(--second-color); /* Cor de fundo quando selecionado */
+  color: #FFF; /* Cor do texto quando selecionado */
+}
+
+/*Bandeira*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+.en img, .br img{
+  width:30px;
+  height:30px;
+  right:10px;
+  cursor: pointer;
+}
+
+/*BOTÃO FECHAR REGRAS*/
+.close {
+    background-color: var(--second-color);
+    color:#FFF;
+    height:30px;
+    width: 30px;
+    border:none;
+    border-radius: 30px;
+    position: absolute;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.close:hover{
+  background-color: var(--primary-color-darker);
+}
+#vidasP{  background-color:#FFF; 
+    color: var(--second-color);
+    height:20px;
+    width: 100px;
+    border-radius: 30px;
+    border: none;}
+
+.janelapopup{
+        outline: 3px solid var(--second-color);
+        backdrop-filter: blur(5.5px);
+        -webkit-backdrop-filter: blur(5.5px);
+        background: rgba(255,255, 255, 0.75);
+        border: 1px solid rgba(255,255, 255, 0.1);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+        color:#232323;
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        background: rgba(255,255,255,0.30);
+        border: 1px solid rgba(255,255, 255, 0.34);
+    }
+
+form input,
+form textarea,
+form label, form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+
+form input, textarea{
+  font-size: 16px;
+  height: 50px;
+  padding: 0 20 px;
+}
+
+form input:focus {
+  outline: 3px solid var(--second-color);
+}
+form button:hover {
+  background: var(--primary-color-darker);
+}
+form button {
+  border: none;
+  background: var(--primary-color);
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+}
+
